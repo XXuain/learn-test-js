@@ -1,20 +1,10 @@
-describe("Our test block", () => {
-  test("First", () => {
-    expect(3 + 3).toBe(6);
-    expect(3 + 3).toBe(6);
-  });
+let myValue = 1;
 
-  it("Second", () => {
-    expect(2 + 3).toBe(5);
-  });
-});
+function add(x, y) {
+  return x + y;
+}
 
-describe("Our test block2", () => {
-  test("111", () => {
-    expect(3 + 3).toBe(6);
-  });
-
-  it("222", () => {
-    expect(2 + 3).toBe(5);
-  });
+test("First ", () => {
+  expect(add(2, 8)).toBe(10);
+  expect(add(2, 5)).toBe(7);
 });
